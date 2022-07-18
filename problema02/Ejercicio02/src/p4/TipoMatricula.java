@@ -45,8 +45,7 @@ public class TipoMatricula {
                     + "Costo de matricula: %.2f\n",
                     cadena,
                     matriculas.get(i).obtenerTipo(),
-                    matriculas.get(i).obtenerMatricula()
-            );
+                    matriculas.get(i).obtenerMatricula());
         }
         cadena = String.format("%sPromedio de matricula: %.2f\n", 
                 cadena, promedioMatriculas);
