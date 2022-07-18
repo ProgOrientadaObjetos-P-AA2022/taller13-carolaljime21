@@ -4,21 +4,23 @@
  * and open the template in the editor.
  */
 package p1;
+import p2.Matricula;
 
 /**
  *
  * @author reroes
  */
-public class MatriculaJardin {
+public class MatriculaJardin extends Matricula {
     private double tarifa;
     
-        
-    public void establecerTarifa(){
+    @Override
+    public void establecerMatricula(){
         // tarifa = costo desayunos + costo libros + costo paseos
         tarifa = 50.2 + 140.2 + 40;
     }
         
-    public double obtenerTarifa(){
-        return tarifa;
+    @Override
+    public void establecerTipo() {
+        tipo = "Matricula capmamento";
     }
 }

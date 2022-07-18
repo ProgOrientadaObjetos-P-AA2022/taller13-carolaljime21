@@ -5,12 +5,14 @@
  */
 package p3;
 
+import java.util.ArrayList;
 import p1.MatriculaCampamento;
 import p1.MatriculaColegio;
 import p1.MatriculaEscuela;
 import p1.MatriculaJardin;
 import p1.MatriculaMaternal;
-import p2.TipoMatricula;
+import p4.TipoMatricula;
+import p2.Matricula;
 
 /**
  *
@@ -18,22 +20,37 @@ import p2.TipoMatricula;
  */
 public class Principal {
     public static void main(String[] args) {
-        TipoMatricula tipos = new TipoMatricula();
         
         MatriculaCampamento mcamp = new MatriculaCampamento();
-        mcamp.establecerTarifa();
+        mcamp.establecerMatricula();
         
         MatriculaColegio mcolegio = new MatriculaColegio();
-        mcolegio.establecerTarifa();
+        mcolegio.establecerMatricula();
         
         MatriculaEscuela mescuela = new MatriculaEscuela();
-        MatriculaJardin mjardin = new MatriculaJardin();
-        MatriculaMaternal mmaternal = new MatriculaMaternal();
-        MatriculaMaternal mmaternal2 = new MatriculaMaternal();
+        mescuela.establecerMatricula();
         
-        tipos.establecerMatriculaCampamento(mcamp);
-        tipos.establecerMatriculaColegio(mcolegio);
-        tipos.establecerPromedioTarifas();
+        MatriculaJardin mjardin = new MatriculaJardin();
+        mjardin.establecerMatricula();
+        
+        MatriculaMaternal mmaternal = new MatriculaMaternal();
+        mmaternal.establecerMatricula();
+        
+        MatriculaMaternal mmaternal2 = new MatriculaMaternal();
+        mmaternal2.establecerMatricula();
+        
+        TipoMatricula tipos = new TipoMatricula();
+        ArrayList<Matricula> matriculas = new ArrayList<>();
+        matriculas.add(mcamp);
+        matriculas.add(mcolegio);
+        matriculas.add(mescuela);
+        matriculas.add(mjardin);
+        matriculas.add(mmaternal);
+        matriculas.add(mmaternal2);
+        
+        tipos.establecerMatriculas(matriculas);
+        tipos.establecerPromedioMatriculas();
+        
         System.out.printf("%s\n", tipos);
     }
 }
