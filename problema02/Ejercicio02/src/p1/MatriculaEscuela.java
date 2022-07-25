@@ -21,7 +21,7 @@ public class MatriculaEscuela extends Matricula {
         
     @Override
     public void establecerTipo() {
-        tipo = "Matricula capmamento";
+        tipo = "Matricula escuela";
     }
     
 }

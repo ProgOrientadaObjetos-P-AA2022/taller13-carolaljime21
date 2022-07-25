@@ -37,7 +37,7 @@ public class TipoMatricula {
         return promedioMatriculas;
     }
     
-     @Override
+      @Override
     public String toString() {
         String cadena = "";
         for (int i = 0; i < matriculas.size(); i++) {
@@ -45,7 +45,8 @@ public class TipoMatricula {
                     + "Costo de matricula: %.2f\n",
                     cadena,
                     matriculas.get(i).obtenerTipo(),
-                    matriculas.get(i).obtenerMatricula());
+                    matriculas.get(i).obtenerMatricula()
+            );
         }
         cadena = String.format("%sPromedio de matricula: %.2f\n", 
                 cadena, promedioMatriculas);

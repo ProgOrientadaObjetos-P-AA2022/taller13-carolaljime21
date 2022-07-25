@@ -7,17 +7,16 @@ package p3;
 
 /**
  *
- * @author reroes
+ * @author PC
  */
-public class DominioGmail extends Correo {
+public class DominioGobiernoEC extends Correo {
 
     @Override
     public void establecerDominio(String g) {
         dominio = g;
     }
-
     @Override
     public String obtenerDominio() {
         return dominio;
-    }
+    }  
 }

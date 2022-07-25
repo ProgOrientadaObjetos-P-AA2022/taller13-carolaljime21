@@ -7,9 +7,9 @@ package p3;
 
 /**
  *
- * @author reroes
+ * @author PC
  */
-public class DominioGmail extends Correo {
+public class DominioYahoo extends Correo {
 
     @Override
     public void establecerDominio(String g) {

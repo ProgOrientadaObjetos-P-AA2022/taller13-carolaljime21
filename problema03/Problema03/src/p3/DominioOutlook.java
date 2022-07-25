@@ -7,9 +7,9 @@ package p3;
 
 /**
  *
- * @author reroes
+ * @author PC
  */
-public class DominioGmail extends Correo {
+public class DominioOutlook extends Correo{
 
     @Override
     public void establecerDominio(String g) {
@@ -20,4 +20,5 @@ public class DominioGmail extends Correo {
     public String obtenerDominio() {
         return dominio;
     }
+
 }

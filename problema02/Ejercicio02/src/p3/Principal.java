@@ -23,21 +23,27 @@ public class Principal {
         
         MatriculaCampamento mcamp = new MatriculaCampamento();
         mcamp.establecerMatricula();
+        mcamp.establecerTipo();
         
         MatriculaColegio mcolegio = new MatriculaColegio();
         mcolegio.establecerMatricula();
+        mcolegio.establecerTipo();
         
         MatriculaEscuela mescuela = new MatriculaEscuela();
         mescuela.establecerMatricula();
+        mescuela.establecerTipo();
         
         MatriculaJardin mjardin = new MatriculaJardin();
         mjardin.establecerMatricula();
+        mjardin.establecerTipo();
         
         MatriculaMaternal mmaternal = new MatriculaMaternal();
         mmaternal.establecerMatricula();
+        mmaternal.establecerTipo();
         
         MatriculaMaternal mmaternal2 = new MatriculaMaternal();
         mmaternal2.establecerMatricula();
+        mmaternal2.establecerTipo();
         
         TipoMatricula tipos = new TipoMatricula();
         ArrayList<Matricula> matriculas = new ArrayList<>();

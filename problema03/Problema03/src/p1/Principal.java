@@ -8,7 +8,7 @@ package p1;
 import java.util.ArrayList;
 import p2.Estudiante;
 import p3.Correo;
-import p3.DominioGmail;
+import p3.*;
 
 /**
  *
@@ -26,27 +26,48 @@ public class Principal {
         Para utpl.edu.ec
         Para gobiernoec.gob
         
-        */
-        
+         */
+
         Estudiante e = new Estudiante();
         e.establecerNombres("René Elizalde");
         e.establecerUserName("rrelizalde");
         ArrayList<Correo> lista = new ArrayList<>();
-        
-        DominioGmail dominio = new DominioGmail();
-        dominio.establecerDominio("gmail.com");
-        Correo c = new Correo();
-        c.establecerDominio(dominio);
+
+        DominioGmail c = new DominioGmail();
+        c.establecerDominio("gmail.com");
         c.establecerUserName(e.obtenerUserName());
         c.establecerCorreo();
         
+        DominioOutlook o = new DominioOutlook();
+        o.establecerDominio("Outlook.com");
+        o.establecerUserName(e.obtenerUserName());
+        o.establecerCorreo();
+
+        DominioYahoo y = new DominioYahoo();
+        y.establecerDominio("Yahoo.com");
+        y.establecerUserName(e.obtenerUserName());
+        y.establecerCorreo();
+
+        DominioUTPL d = new DominioUTPL();
+        d.establecerDominio("utpl.edu.ec");
+        d.establecerUserName(e.obtenerUserName());
+        d.establecerCorreo();
+
+        DominioGobiernoEC g = new DominioGobiernoEC();
+        g.establecerDominio("gobiernoec.gob.ec");
+        g.establecerUserName(e.obtenerUserName());
+        g.establecerCorreo();
+        
         lista.add(c);
-        
+        lista.add(o);
+        lista.add(y);
+        lista.add(d);
+        lista.add(g);
+
         e.establecerCorreos(lista);
-        
+
         System.out.printf("%s\n", e);
-        
-        
+
     }
-    
+
 }

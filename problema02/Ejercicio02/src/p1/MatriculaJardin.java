@@ -21,6 +21,6 @@ public class MatriculaJardin extends Matricula {
         
     @Override
     public void establecerTipo() {
-        tipo = "Matricula capmamento";
+        tipo = "Matricula jardin";
     }
 }

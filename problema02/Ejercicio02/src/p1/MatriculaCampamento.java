@@ -4,14 +4,14 @@
  * and open the template in the editor.
  */
 package p1;
+
 import p2.Matricula;
 
 /**
  *
  * @author reroes
  */
-
-    public class MatriculaCampamento extends Matricula {
+public class MatriculaCampamento extends Matricula {
 
     @Override
     public void establecerMatricula() {
@@ -22,6 +22,5 @@ import p2.Matricula;
     public void establecerTipo() {
         tipo = "Matricula capmamento";
     }
-    
-    
+
 }

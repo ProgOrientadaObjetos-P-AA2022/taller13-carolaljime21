@@ -21,15 +21,12 @@ public class Estudiante {
     public void establecerNombres(String g) {
         nombres = g;
     }
-
     public void establecerUserName(String g) {
         username = g;
     }
-
     public void establecerCorreos(ArrayList<Correo> c) {
         correos = c;
     }
-
     public ArrayList<Correo> obtenerCorreos() {
         return correos;
     }
